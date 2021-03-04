@@ -24,29 +24,38 @@
       <v-col cols="12">
         <exam-card>
           <h3 class="mb-3 text-center">Answer</h3>
-          <p>TODO: Update this answer</p>
           <p class="text-justify body-1">
-            Let's start with a straight-to-the-point answer before I provide an
-            in-depth analysis of this problem. I would contact my supervisor,
-            tell him/her what happened, and let them handle these issues
-            (somehow this seems wrong that i am transferring the responsibility
-            to other people). The reason being is that as a member of a team, it
-            would be disrespectful for the team leader of the other team if I
-            make any move regarding this matter. This type of behavioral
-            question reminds us to not bypass the people in charge.
-            Additionally, the person that commits an untested and unapproved
-            code also has a feeling and ego so I, a member of another team might
-            hurt him when being confronted about his mistake.
+            I was also informed that his commits were not tested and approved
+            yet, in that case talking with my team leader will be the best
+            approach since a rollback of the recent commits might be necessary.
+            Communication between teams is mostly handled by team leaders so it
+            is important to inform them. If in case the commits that were made
+            by the other team have been approved, then I will git pull to get
+            the latest copy of the remote branch, fix any conflict if there's
+            any then finally after another set of tests push the commits to the
+            remote branch. Merging with the main/master branch should be the
+            next step, but it is quite unclear if that is necessary for the time
+            being.
           </p>
           <p class="text-justify body-1">
-            Something that I can say about this problem is that some companies
-            are letting members of a team solve the same type of bug to make it
-            some sort of competition. The first person to solve the bug gets to
-            be proud of his fix and carry it as a medal of honor. If that is not
-            the case in this scenario and is happening quite frequently, it is
-            important to note that there might be a problem with communication
-            between teams that should be fixed to save time, energy, and money
-            not just for the employees but for the company as well.
+            Now, I think it is important to note that team leaders should handle
+            the arrangement and decision between teams to avoid any hostile
+            behavior that might happen between team members. One thing that I
+            learned through experience is that some developers tend to get a
+            little defensive or irritated especially when other developers try
+            to tell them what to do. That is why letting a person with a higher
+            rank step in is a huge help to avoid this type of situation.
+          </p>
+          <p class="text-justify body-1">
+            Let's reverse the situation, suppose that I was the one to push
+            those untested commits. In this scenario, I would very much
+            appreciate it if you can tell it me regardless if you are a team
+            member or a leader. I would most likely apologize and remember this
+            incident so it will not happen again. I would also like to share
+            that I come from a group that has a very open type of communication
+            when it comes to developing websites. If my code is not working or
+            efficient, I would like to be informed about it so I can improve
+            upon it. After all, I loved learning more than anything.
           </p>
         </exam-card>
       </v-col>
