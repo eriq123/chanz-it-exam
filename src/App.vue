@@ -1,32 +1,38 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    <v-app>
+      <TheNavigation @open="drawer = !drawer" />
+      <TheNavigationDrawer :drawer="drawer" @draw="updateDrawer" />
+      <v-main>
+        <v-container>
+          <v-slide-y-transition mode="out-in">
+            <router-view></router-view>
+          </v-slide-y-transition>
+        </v-container>
+      </v-main>
+    </v-app>
   </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import TheNavigation from "@/components/TheNavigation";
+import TheNavigationDrawer from "@/components/TheNavigationDrawer";
+export default {
+  name: "APP",
+  data() {
+    return {
+      drawer: true,
+    };
+  },
+  components: {
+    TheNavigation,
+    TheNavigationDrawer,
+  },
+  methods: {
+    updateDrawer(value) {
+      this.drawer = value;
+    },
+  },
+};
+</script>
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
