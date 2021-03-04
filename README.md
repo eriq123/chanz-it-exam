@@ -4,6 +4,8 @@
 
 https://eriq123.github.io/chanz-it-exam/
 
+or
+
 ## Project setup
 
 ```
